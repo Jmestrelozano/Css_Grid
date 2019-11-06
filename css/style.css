@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+    /*10px*/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #262626;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10rem;
+}
+
+.wrapper {
+    display: grid;
+    background-color: #fff;
+    width: 900px;
+    max-width: 100%;
+    margin: 3rem auto;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.caja {
+    background-color: #2ad8f2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caja.one {
+    grid-column: span 1;
+    grid-row: span 2;
+    background-image: url(../img/1.jpg);
+}
+
+.caja.two {
+    grid-column: span 4;
+    grid-row: span 2;
+    background-image: url(../img/2.jpg);
+}
+
+.caja.three {
+    grid-column: 1 / span 2;
+    grid-row: 3/ span 6;
+    background-image: url(../img/3.png);
+}
+
+.caja.four {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 2;
+    background-image: url(../img/4.jpg);
+}
+
+.caja.five {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+    background-image: url(../img/5.jpg);
+}
+
+.caja.six {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url(../img/6.jpg);
+}
